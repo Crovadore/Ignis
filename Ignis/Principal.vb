@@ -1638,6 +1638,8 @@ Public Class Principal
 #End Region
 
         Dim g As Graphics = Graphics.FromImage(Imagem_Resultado)
+        g.CompositingQuality = CompositingQuality.HighQuality
+        g.SmoothingMode = SmoothingMode.HighQuality
         For Each Fronteira In FronteirasDaGeometria
             For i = 0 To UBound(Fronteira)
                 g.DrawLine(New Pen(Color.Black, 1), New PointF(PontosDaGeometria(LinhasDaGeometria(Fronteira(i))(0))(0) * Proporcao_Geral, PontosDaGeometria(LinhasDaGeometria(Fronteira(i))(0))(1) * Proporcao_Geral), New PointF(PontosDaGeometria(LinhasDaGeometria(Fronteira(i))(1))(0) * Proporcao_Geral, PontosDaGeometria(LinhasDaGeometria(Fronteira(i))(1))(1) * Proporcao_Geral))
@@ -1662,6 +1664,8 @@ Public Class Principal
         Dim Segundo As Boolean = False
 
         Dim g As Graphics = Graphics.FromImage(Imagem_Resultado)
+        g.CompositingQuality = CompositingQuality.HighQuality
+        g.SmoothingMode = SmoothingMode.HighQuality
         Dim Fundo As Brush = New SolidBrush(Color.White)
         Dim Tamanho As New Drawing.Size(Imagem_Tamanho + 1, Imagem_Tamanho + 1)
         g.FillRectangle(Fundo, New Rectangle(New Point(0, 0), Tamanho))
