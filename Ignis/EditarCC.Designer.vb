@@ -23,15 +23,6 @@ Partial Class EditarCC
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.splitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.PainelConsulta = New System.Windows.Forms.Panel()
-        Me.bAdicionar = New MeshExplorer.Controls.DarkButton()
-        Me.bEditar = New MeshExplorer.Controls.DarkButton()
-        Me.bRemover = New MeshExplorer.Controls.DarkButton()
-        Me.lCC = New System.Windows.Forms.ListView()
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.PainelCadastro = New System.Windows.Forms.Panel()
         Me.tDescricao = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -48,13 +39,22 @@ Partial Class EditarCC
         Me.lLinhasDisponiveis = New System.Windows.Forms.ListView()
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PainelConsulta = New System.Windows.Forms.Panel()
+        Me.bAdicionar = New MeshExplorer.Controls.DarkButton()
+        Me.bEditar = New MeshExplorer.Controls.DarkButton()
+        Me.bRemover = New MeshExplorer.Controls.DarkButton()
+        Me.lCC = New System.Windows.Forms.ListView()
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.splitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.splitContainer1.Panel1.SuspendLayout()
         Me.splitContainer1.SuspendLayout()
-        Me.PainelConsulta.SuspendLayout()
         Me.PainelCadastro.SuspendLayout()
         CType(Me.tParametro2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tParametro1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PainelConsulta.SuspendLayout()
         Me.SuspendLayout()
         '
         'splitContainer1
@@ -79,91 +79,6 @@ Partial Class EditarCC
         Me.splitContainer1.SplitterDistance = 332
         Me.splitContainer1.SplitterWidth = 1
         Me.splitContainer1.TabIndex = 10
-        '
-        'PainelConsulta
-        '
-        Me.PainelConsulta.Controls.Add(Me.bAdicionar)
-        Me.PainelConsulta.Controls.Add(Me.bEditar)
-        Me.PainelConsulta.Controls.Add(Me.bRemover)
-        Me.PainelConsulta.Controls.Add(Me.lCC)
-        Me.PainelConsulta.Controls.Add(Me.Label8)
-        Me.PainelConsulta.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PainelConsulta.Location = New System.Drawing.Point(0, 0)
-        Me.PainelConsulta.Name = "PainelConsulta"
-        Me.PainelConsulta.Size = New System.Drawing.Size(332, 461)
-        Me.PainelConsulta.TabIndex = 27
-        '
-        'bAdicionar
-        '
-        Me.bAdicionar.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bAdicionar.Location = New System.Drawing.Point(15, 419)
-        Me.bAdicionar.Name = "bAdicionar"
-        Me.bAdicionar.Size = New System.Drawing.Size(302, 30)
-        Me.bAdicionar.TabIndex = 30
-        Me.bAdicionar.Text = "Adicionar Nova Condição de Contorno"
-        Me.bAdicionar.UseVisualStyleBackColor = True
-        '
-        'bEditar
-        '
-        Me.bEditar.Enabled = False
-        Me.bEditar.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bEditar.Location = New System.Drawing.Point(171, 382)
-        Me.bEditar.Name = "bEditar"
-        Me.bEditar.Size = New System.Drawing.Size(146, 25)
-        Me.bEditar.TabIndex = 29
-        Me.bEditar.Text = "Editar"
-        Me.bEditar.UseVisualStyleBackColor = True
-        '
-        'bRemover
-        '
-        Me.bRemover.Enabled = False
-        Me.bRemover.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bRemover.Location = New System.Drawing.Point(15, 382)
-        Me.bRemover.Name = "bRemover"
-        Me.bRemover.Size = New System.Drawing.Size(146, 25)
-        Me.bRemover.TabIndex = 28
-        Me.bRemover.Text = "Remover"
-        Me.bRemover.UseVisualStyleBackColor = True
-        '
-        'lCC
-        '
-        Me.lCC.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2, Me.ColumnHeader1, Me.ColumnHeader3})
-        Me.lCC.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lCC.FullRowSelect = True
-        Me.lCC.GridLines = True
-        Me.lCC.HideSelection = False
-        Me.lCC.Location = New System.Drawing.Point(15, 30)
-        Me.lCC.Name = "lCC"
-        Me.lCC.Size = New System.Drawing.Size(302, 343)
-        Me.lCC.TabIndex = 27
-        Me.lCC.UseCompatibleStateImageBehavior = False
-        Me.lCC.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "Tipo"
-        Me.ColumnHeader2.Width = 80
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "Fronteira"
-        Me.ColumnHeader1.Width = 70
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "Descrição"
-        Me.ColumnHeader3.Width = 148
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.LightGray
-        Me.Label8.Location = New System.Drawing.Point(12, 12)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(193, 15)
-        Me.Label8.TabIndex = 26
-        Me.Label8.Text = "Condições de Contorno Definidas:"
         '
         'PainelCadastro
         '
@@ -339,7 +254,6 @@ Partial Class EditarCC
         Me.lLinhasDisponiveis.TabIndex = 27
         Me.lLinhasDisponiveis.UseCompatibleStateImageBehavior = False
         Me.lLinhasDisponiveis.View = System.Windows.Forms.View.Details
-        Me.lLinhasDisponiveis.VirtualMode = True
         '
         'ColumnHeader4
         '
@@ -357,6 +271,91 @@ Partial Class EditarCC
         Me.Label1.TabIndex = 26
         Me.Label1.Text = "Linhas disponíveis:"
         '
+        'PainelConsulta
+        '
+        Me.PainelConsulta.Controls.Add(Me.bAdicionar)
+        Me.PainelConsulta.Controls.Add(Me.bEditar)
+        Me.PainelConsulta.Controls.Add(Me.bRemover)
+        Me.PainelConsulta.Controls.Add(Me.lCC)
+        Me.PainelConsulta.Controls.Add(Me.Label8)
+        Me.PainelConsulta.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PainelConsulta.Location = New System.Drawing.Point(0, 0)
+        Me.PainelConsulta.Name = "PainelConsulta"
+        Me.PainelConsulta.Size = New System.Drawing.Size(332, 461)
+        Me.PainelConsulta.TabIndex = 27
+        '
+        'bAdicionar
+        '
+        Me.bAdicionar.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bAdicionar.Location = New System.Drawing.Point(15, 419)
+        Me.bAdicionar.Name = "bAdicionar"
+        Me.bAdicionar.Size = New System.Drawing.Size(302, 30)
+        Me.bAdicionar.TabIndex = 30
+        Me.bAdicionar.Text = "Adicionar Nova Condição de Contorno"
+        Me.bAdicionar.UseVisualStyleBackColor = True
+        '
+        'bEditar
+        '
+        Me.bEditar.Enabled = False
+        Me.bEditar.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bEditar.Location = New System.Drawing.Point(171, 382)
+        Me.bEditar.Name = "bEditar"
+        Me.bEditar.Size = New System.Drawing.Size(146, 25)
+        Me.bEditar.TabIndex = 29
+        Me.bEditar.Text = "Editar"
+        Me.bEditar.UseVisualStyleBackColor = True
+        '
+        'bRemover
+        '
+        Me.bRemover.Enabled = False
+        Me.bRemover.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bRemover.Location = New System.Drawing.Point(15, 382)
+        Me.bRemover.Name = "bRemover"
+        Me.bRemover.Size = New System.Drawing.Size(146, 25)
+        Me.bRemover.TabIndex = 28
+        Me.bRemover.Text = "Remover"
+        Me.bRemover.UseVisualStyleBackColor = True
+        '
+        'lCC
+        '
+        Me.lCC.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2, Me.ColumnHeader1, Me.ColumnHeader3})
+        Me.lCC.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lCC.FullRowSelect = True
+        Me.lCC.GridLines = True
+        Me.lCC.HideSelection = False
+        Me.lCC.Location = New System.Drawing.Point(15, 30)
+        Me.lCC.Name = "lCC"
+        Me.lCC.Size = New System.Drawing.Size(302, 343)
+        Me.lCC.TabIndex = 27
+        Me.lCC.UseCompatibleStateImageBehavior = False
+        Me.lCC.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Tipo"
+        Me.ColumnHeader2.Width = 80
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Fronteira"
+        Me.ColumnHeader1.Width = 70
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "Descrição"
+        Me.ColumnHeader3.Width = 148
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.LightGray
+        Me.Label8.Location = New System.Drawing.Point(12, 12)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(193, 15)
+        Me.Label8.TabIndex = 26
+        Me.Label8.Text = "Condições de Contorno Definidas:"
+        '
         'EditarCC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -372,12 +371,12 @@ Partial Class EditarCC
         Me.splitContainer1.Panel1.ResumeLayout(False)
         CType(Me.splitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.splitContainer1.ResumeLayout(False)
-        Me.PainelConsulta.ResumeLayout(False)
-        Me.PainelConsulta.PerformLayout()
         Me.PainelCadastro.ResumeLayout(False)
         Me.PainelCadastro.PerformLayout()
         CType(Me.tParametro2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tParametro1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PainelConsulta.ResumeLayout(False)
+        Me.PainelConsulta.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
