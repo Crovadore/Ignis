@@ -7,4 +7,4 @@ Seus autores são:
 - Diego Oliveira Kunrath (realizou a pesquisa de mercado e os estudos relacionados ao MEF) - do_kunrath@hotmail.com
 - Gustavo Crovador (desenvolveu o código e realizou estudos relacionados ao MEF) - gustavo.crovador@gmail.com
 
-Este trabalho foi orientado pelo Prof. Antonio Carlos Foltran.
+Este trabalho foi orientado pelo M. Eng. Antonio Carlos Foltran no ano de 2017.
