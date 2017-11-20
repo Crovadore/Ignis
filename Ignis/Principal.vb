@@ -1097,7 +1097,7 @@ Public Class Principal
     End Sub
 
     Private Sub SobreOIgnisToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles SobreOIgnisToolStripMenuItem1.Click
-        MsgBox("O Ignis é um software didático para análises de condução de calor baseado no Método dos Elementos Finitos (MEF), criado na linguagem VB.NET." & vbNewLine & vbNewLine & "Foi criado no ano de 2017 como produto de um Trabalho de Conclusão de Curso de Engenharia Mecânica da Universidade Positivo, em Curitiba, Paraná." & vbNewLine & vbNewLine & "Seus autores são:" & vbNewLine & "Diego Oliveira Kunrath (do_kunrath@hotmail.com)" & vbNewLine & "Gustavo Crovador (gustavo.crovador@gmail.com)" & vbNewLine & vbNewLine & "Este software é completamente gratuito e seu código fonte pode ser acessado em: http://www", MsgBoxStyle.Information)
+        MsgBox("O Ignis é um software didático para análises de condução de calor baseado no Método dos Elementos Finitos (MEF), criado na linguagem VB.NET." & vbNewLine & vbNewLine & "Foi criado no ano de 2017 como produto de um Trabalho de Conclusão de Curso de Engenharia Mecânica da Universidade Positivo, em Curitiba, Paraná." & vbNewLine & vbNewLine & "Seus autores são:" & vbNewLine & "Diego Oliveira Kunrath (do_kunrath@hotmail.com)" & vbNewLine & "Gustavo Crovador (gustavo.crovador@gmail.com)" & vbNewLine & vbNewLine & "Este software é completamente gratuito e seu código fonte pode ser acessado em: https://github.com/Crovadore/Ignis" & vbNewLine & vbNewLine & "Este trabalho foi orientado pelo M. Eng. Antonio Carlos Foltran.", MsgBoxStyle.Information)
     End Sub
 
     Private Sub ResultadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ResultadosToolStripMenuItem.Click
